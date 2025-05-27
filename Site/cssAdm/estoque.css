@@ -1,0 +1,44 @@
+
+.container {
+    display: flex;
+    justify-content: flex-end; /* Posiciona na direita */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: 35px;
+    
+ }
+ /* Responsividade para dispositivos pequenos */
+ @media (max-width: 768px) {
+    .table {
+        display: block;
+        overflow-x: auto;
+    }
+    .table thead {
+        display: none; /* Oculta o cabeçalho para dispositivos menores */
+    }
+    .table tbody tr {
+        display: block;
+        border: 1px solid #dee2e6;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        padding: 10px;
+        background-color: #f8f9fa;
+    }
+    .table tbody tr td {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+    .table tbody tr th {
+        font-weight: bold;
+        color: #5f0f40;
+    }
+    .card{
+        margin-left: 60px;
+    }
+
+ }
+ /* Estilização da tabela */
+ .table-responsive {
+    overflow-x: auto;
+ }

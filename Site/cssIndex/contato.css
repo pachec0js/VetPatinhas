@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --Branco: #fcfbf9;
+    --Roxo: #5f0f40;
+    --RoxoVinho: #7e1d59;
+    --RoxoClaro: #b61479;
+    --vinho: #9A031E;
+    --Amarelo: #FB8B24;
+    --Laranja: #E36414;
+    --VerdeEscuro: #0F4C5C;
+    --preto: #000000;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.contato{
+    width: 1200px;
+    height: 600px;
+    margin-top: 25px;
+    border: 3px solid #0F4C5C;
+    border-radius: 50px;
+    display: flex;
+    background-color: #fcfbf9;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formcontato h1{
+    color: #0F4C5C;
+}
+
+.imgcontato{
+    width: 630px;
+    height: 600px;
+    margin-left: 65px;
+}
+
+.imgcontato img{
+    margin-top: 25px;
+}
+
+
+.formcontato{
+    width: 380px;
+    height: 500px;
+
+    margin-left: 55px;
+    margin-top: 50px;
+}
+
+.espaco{
+    width: 350px;
+    height: 50px;
+
+}
+.espaco2{
+    width: 350px;
+    height: 30px;
+
+}
+
+.form-label{
+    color: #0F4C5C;
+    font-weight: bold;
+}
+
+.form-control:focus{
+    border: 2px solid #0F4C5C;
+}
+
+.enviar {
+    border-radius: 10px;
+    width: 150px;
+    height: 35px;
+    background-color: #0F4C5C;
+    color: #fff;
+    border: none;
+}
+
+.enviar:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+    background-color: #0e404d;
+}
+.container{
+    width: 100%;
+    height: auto;
+}
+
+.dog-contato{
+    width: 550px;
+    height: 550px;
+}
+
+@media screen and (max-width: 480px){
+    .contato{
+        width: auto;
+        height: auto;
+        display: block;
+    }
+    .dog-contato{
+        width: 60%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .imgcontato{
+        margin-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .formcontato{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

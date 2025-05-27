@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --Branco: #fcfbf9;
+    --Roxo: #5f0f40;
+    --RoxoVinho: #7e1d59;
+    --RoxoClaro: #b61479;
+    --vinho: #9A031E;
+    --Amarelo: #FB8B24;
+    --Laranja: #E36414;
+    --VerdeEscuro: #0F4C5C;
+    --preto: #000000;
+}
+
+.container {
+    font-family: "Poppins", sans-serif;
+    padding: 0px 40px 0px 40px;
+
+}
+
+.titulo{
+    font-size: 45px;
+    color: var(--Roxo);
+    margin-bottom: 30px;
+    padding-left: 0;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+
+
+table.resultados {
+  border-top: 1.5px solid #ccc;
+  border-bottom: 1.5px solid #ccc;
+  border-collapse: collapse;
+  background-color: #c5c5c5;
+  width: 100%;
+  margin-bottom: 90px;
+  
+}
+
+th, td {
+  width: 33.3%;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  font-weight: 700;
+}
+
+th {
+  background-color: #ffffff;
+  color: #959595;
+}
+
+
+path {
+  color: black;
+  width: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .container{
+      padding: 0px 10px 0px 10px;
+    }
+    
+}

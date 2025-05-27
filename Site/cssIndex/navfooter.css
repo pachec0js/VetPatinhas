@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+ 
+:root {
+    --Branco: #fcfbf9;
+    --Roxo: #5f0f40;
+    --RoxoVinho: #7e1d59;
+    --RoxoClaro: #b61479;
+    --vinho: #9A031E;
+    --Amarelo: #FB8B24;
+    --Laranja: #E36414;
+    --VerdeEscuro: #0F4C5C;
+    --preto: #000000;
+}
+ 
+* {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+ 
+body{
+    background-color: var(--Branco);
+    text-decoration: none;
+}
+ 
+ 
+.navbar-color {
+    background-color: var(--Branco);
+}
+ 
+.navbar-brand {
+    justify-content: space-between;
+}
+ 
+.navbar-nav {
+    margin: auto;
+   
+}
+ 
+.navbar-nav li {
+    font-size: 20px;
+    padding-left: 15px;  
+    padding-right: 15px;
+}
+ 
+ 
+i.bi.bi-person-fill {
+    font-size: 30px;
+    color: var(--RoxoVinho);
+    padding-right: 30px;
+   
+}
+ 
+ 
+/*rodapé*/
+.rodape {
+    background-color: var(--RoxoVinho);
+    color: var(--Branco);
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+ 
+ 
+dl a {
+    text-decoration: none;
+    color: var(--Branco);
+    display: flex;
+    margin-bottom: 10px;
+}
+ 
+.agendamentos {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+}
+ 
+.section1 {
+    margin-left: 2%;
+    color: var(--Branco);
+   
+}
+ 
+.img-footer {
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ 
+.img-footer img {
+    width: 100%;
+}
+ 
+.help h5{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+ 
+ 
+.faqs {
+    border-radius: 30px;
+    border: 1px solid var(--Branco);
+    margin-bottom: 10%;
+    text-align: start;
+    width: 100%;
+    padding: 6px;
+    font-size: 15px;
+    color: var(--Branco);
+    text-decoration: none;
+}
+ 
+.phone{
+    border-radius: 30px;
+    border: 1px solid var(--Branco);
+    margin-bottom: 10%;
+    text-align: start;
+    width: 100%;
+    padding: 6px;
+    font-size: 15px;
+   
+}
+ 
+.bi-arrow-right{
+    margin-left: 5px;
+}
+ 
+.bi-telephone {
+    margin-left: 5px;
+}
+ 
+.bi-envelope-paper{
+    font-size: 15px;
+}
+.email {
+    border-radius: 30px;
+    border: 1px solid var(--Branco);
+    margin-bottom: 5%;
+    text-align: start;
+    width: 100%;
+    padding: 10px;
+    font-size: 9px;
+}
+ 
+.help .bi {
+    margin-right: 15%;
+}
+ 
+.footerItens .footer2,.footer3,.footer4 {
+    margin-top: 30%;
+   
+}
+ 
+.footer4{
+    margin-top: 70%;
+}
+ 
+.espacinho{
+    color: var(--RoxoVinho);
+}
+ 
+.footerItens{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+ 
+.footerItens h5{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+ 
+a.link {
+    text-decoration: none;
+}
+ 
+.space {
+    color: var(--RoxoVinho);
+    height: 55px;
+    width: auto;
+}
+ 
+.section2 {
+    background-color: var(--Roxo);
+}
+ 
+.section2 .line2 {
+    margin-top: 1%;
+}
+ 
+.inputsfooters {
+    margin-top: 4%;
+   
+}
+ 
+.footerLogin {
+    border-radius: 21px;
+    width: 100px;
+    height: 40px;
+    background: var(--Branco);
+    color: var(--RoxoVinho);
+    border: none;
+   
+}
+ 
+.footerCadastro {
+    border-radius: 21px;
+    width: 150px;
+    height: 40px;
+    background: var(--RoxoVinho);
+    color: var(--Branco);
+    border: 1px solid var(--Branco);
+    margin-left: 2%;
+}
+ 
+.footer5 {
+    text-align: end;
+}
+ 
+.section2 .col-md-4 i {
+    margin-left: 5%;
+    font-size: 40px;
+}
+ 
+.section2 .col-md-4 p {
+    margin-top: 8%;
+    margin-bottom: 0;
+}
+.row {
+    gap: 15px;
+}
+.texto-rodape{
+    font-size: 14px;
+}
+.termos{
+    font-size: 12px;
+    margin: 17px;
+}
+ 
+.line2 h5{
+    margin-top: 10px;
+    font-weight: bold;
+}
+ 
+iframe{
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+ 
+ 
+.sobrenosFooter{
+    font-weight: 700;
+    margin: 17px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffff;
+   
+ 
+}
+.footerspace{
+    margin-top: 30px;
+}
+ 
+ 
+.location h5{
+    text-align: right;
+    font-weight: bold;
+}
+ 
+.patasFooter {
+    position: absolute;
+    width: 105px;
+    rotate: 10deg;
+    bottom: 125px;
+    transform: translateX(-100%);
+    z-index: 2;
+}
+ 
+ 
+.redeSocial {
+    color: var(--Branco);
+}
+ 
+.redeSocial i:hover {
+    opacity: 0.5;
+}
+.agendamentosrespons{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    display: none;  
+    text-align: center;
+   
+}
+.agendamentosfooter {
+    margin-top: 70px;
+}
+ 
+ 
+/*responsividade mobile*/
+ 
+@media screen and (max-width: 480px){
+ 
+    .section1{
+        display: flex;
+        height: auto;
+    }
+    .img-footer img{
+        width: 70%;
+        margin-top: 35%;
+    }
+    .img-footer{
+        width: 40%;
+    }
+    .faqs, .phone, .email{
+        width: 120%;
+    }
+    .help{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .mobile{
+        display: flex;
+    }
+ 
+    .footerItens .footer2, .footer3, .footer4 {
+        margin-top: 10%;
+    }
+    .footer2, .footer3{
+        width: 65%;
+        margin-left: 35%;
+        margin-bottom: 0;
+        height: auto;
+    }
+    .footer4{
+        width: 65%;
+        margin-left: 35%;
+        margin-top: 10%;
+    }
+   
+    .space{
+        height: 0;
+    }
+    .espacinho{
+        display: none;
+    }
+    .agendamentos{
+        display: none;
+    }
+ 
+    .agendamentosrespons{
+        display: block;
+        margin-right: 35%;
+       
+    }
+   
+    a.agendamentosrespons {
+        padding-top: 15px;
+    }
+    .termos{
+        display: none;
+    }
+    .termosrespons{
+        display: block;
+        font-size: 10px;
+        text-align: center;
+    }
+    .patasFooter {
+        width: 100px;
+        margin-left: 350px;
+        bottom: 235px;
+    }
+    .section2 .line2 {
+        margin-top: 3%;
+    }
+}

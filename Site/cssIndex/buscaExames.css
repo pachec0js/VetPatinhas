@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --Branco: #fcfbf9;
+    --Roxo: #5f0f40;
+    --RoxoVinho: #7e1d59;
+    --RoxoClaro: #b61479;
+    --vinho: #9A031E;
+    --Amarelo: #FB8B24;
+    --Laranja: #E36414;
+    --VerdeEscuro: #0F4C5C;
+    --preto: #000000;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: var(--Branco);
+    text-decoration: none;
+}
+
+
+.titulo h1{
+    font-weight: bold;
+    color: #5f0f40;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 0;
+}
+
+
+
+.resultados {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 0;
+}
+
+.container .form {
+    margin: 20px;
+    height: 480px;
+    max-width: 80%;
+    width: 100%;
+    display: flex;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 30px;
+    border: 3px solid #0F4C5C;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.tituloconfiraresultados{
+    border-left: 7px solid;
+    border-color: #0F4C5C;
+    color: #0F4C5C;
+    align-items: center;
+    height: 60px;
+    display: flex;
+    padding-left: 20px;
+    margin-top: 0;
+    font-size: 30px;
+}
+
+
+
+input.confirmar-button{
+    width: 40%;
+    height: 45px;
+    background-color: #0F4C5C;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 20px auto;
+    display: block;
+    padding: 0 5px;
+}
+
+.form-label{
+    color: #0F4C5C;
+    font-weight: bold;
+    align-items: flex-start;
+}
+
+
+input.form-control{
+    height: 45px;
+    width: 95%;
+    border-radius: 30px;
+    border: 1px solid #000000;
+    margin: 0 auto;
+    display: block;
+    padding: 0px 20px;
+}
+
+label{
+    font-size: 20px;
+    padding: 15px 0px 10px;
+}
+
+.alert-danger{
+    background-color: none;
+}
+/*responsividade*/
+/*celulares e smartfones*/
+@media (min-width: 320px) and (max-width: 480px) {
+    input.form-control{
+        width: 60%;
+        padding: 0px 15px;
+    }
+    .tituloconfiraresultados{
+        font-size: 19px;
+        margin-left: 35px;
+    }
+    .form-label {
+        margin-left: 50px;
+        font-size: 15px;
+    }
+    input.confirmar-button{
+        font-size: 13px;
+        height: 35px;
+    }
+
+
+}
+
+/*tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container .form {
+        max-width: 90%;
+        
+    }
+    input.form-control{
+        width: 70%;
+        padding: 0px 15px;
+    }
+    .tituloconfiraresultados{
+        padding-left: 8px;
+        font-size: 20px;
+        margin-left: 30px;
+        width: 70%;
+    }
+    .form-label {
+        margin-left: 50px;
+    }
+}
+
+

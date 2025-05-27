@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --Branco: #fcfbf9;
+    --Roxo: #5f0f40;
+    --RoxoVinho: #7e1d59;
+    --RoxoClaro: #b61479;
+    --vinho: #9A031E;
+    --Amarelo: #FB8B24;
+    --Laranja: #E36414;
+    --VerdeEscuro: #0F4C5C;
+    --preto: #000000;
+}
+.form{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.form .container {
+    display: flex;
+    margin: 30px;
+    width: 60%;                      
+    height:450px; 
+    background:linear-gradient(to right, var(--Roxo), var(--RoxoClaro));
+    box-shadow:0 15px 30px rgba(0,0,0,0.1);
+    font-family: 'Poppins', sans-serif;
+    border-radius:20px;
+}
+
+.container .ladoesquerdo{
+    padding:30px 30px;
+    width:50%;
+    height: 100%;
+    background-color:var(--Roxo);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.ladoesquerdo{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+.ladodireito{
+    background:linear-gradient(to right, var(--Roxo), var(--RoxoClaro));
+    width: 50%;
+    height: 100%;
+     border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.login label {
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.login input {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.login input:focus {
+    border: 1px solid rgb(219, 190, 190);
+}
+
+.esquecisenha{
+    text-decoration: none;
+}
+.esquecisenha p {
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.titulo h1, .titulo p{
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+.titulo h1{
+    font-weight: 800;
+}
+
+.imggato{
+    width: 60%;
+    z-index: 1;
+}
+
+
+.textoscadastro p{
+    z-index: 2;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.naomembro{
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+}
+
+.cadastrese {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.botaoEntrar {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+
+.botaoEntrar input {
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    width: 60%; 
+    background-color: var(--RoxoClaro);
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: none; 
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.botaoEntrar input:hover {
+    transform: scale(1.05);
+    box-shadow: none; 
+    background-color: var(--RoxoVinho);
+    color: #fff;
+}
+
+.naomembroresponsive{
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .imggato{
+        display: none;
+    }    
+
+   .ladodireito{
+    display:none;
+   }
+
+   .naomembroresponsive{
+    display: flex;
+    gap: 5px;
+   }
+
+   .textonmembro{
+    color: var(--Branco);
+    font-weight: 700;
+    
+   }
+
+   a.textocadastrese {
+    text-decoration: none;
+    color: var(--Branco);
+    
+    
+   }
+    .container .ladoesquerdo{
+        width:100%;
+        height: 100%;
+        background-color:linear-gradient(to right, var(--Roxo), var(--RoxoClaro));
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    
+    }
+    .form .container {
+        width: 85%;                      
+    }
+}

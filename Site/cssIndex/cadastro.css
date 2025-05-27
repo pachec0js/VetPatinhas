@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+ 
+:root {
+    --Branco: #fcfbf9;
+    --Roxo: #5f0f40;
+    --RoxoVinho: #7e1d59;
+    --RoxoClaro: #b61479;
+    --vinho: #9A031E;
+    --Amarelo: #FB8B24;
+    --Laranja: #E36414;
+    --VerdeEscuro: #0F4C5C;
+    --preto: #000000;
+}
+ 
+* {
+    font-family: "Poppins", sans-serif;
+}
+ 
+/*container principal*/
+ 
+.container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#ffffff;
+    padding: 30px;
+}
+.container .card{
+    height:550px;
+    width:850px;
+    background-color:var(--Roxo);
+    position:relative;
+    box-shadow:0 15px 30px rgba(0,0,0,0.1);
+    font-family: 'Poppins', sans-serif;
+    border-radius:20px;
+}
+.container .card .form{
+    width:100%;
+    height:100%;
+    display:flex;
+}
+.container .card .left-side{
+    width:35%;
+    background: linear-gradient(to left, var(--Roxo), var(--RoxoClaro));
+    height:100%;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    padding:20px 30px;
+    box-sizing:border-box;
+ 
+}
+ 
+ 
+/*lado esquerdo (fixo), com barra de progresso*/
+ 
+.titulocima{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 25px;
+}
+.imgladoesquerdo {
+    width: 230px;
+    margin-top: 30px;
+    margin-right: 50px;
+   
+}
+ 
+.progress-bar{
+    list-style:none;
+    color:#fff;
+    margin-top:30px;
+    font-size:13px;
+    font-weight:700;
+    counter-reset:container 0;
+}
+.progress-bar li{
+       position:relative;
+       margin-left:40px;
+       margin-top:50px;
+       counter-increment:container 1;
+    color:#bfbfbf;
+}
+ 
+ 
+.progress-bar li::before{
+    content:'';
+    line-height:25px;
+    text-align:center;
+    position:absolute;
+    height:25px;
+    width:25px;
+    border-radius:50%;
+    left:-40px;
+    top:-5px;
+    z-index:10;
+    background-color:#ffffff;
+}
+ 
+.progress-bar li::after{
+    content: '';
+    position: absolute;
+    height: 90px;
+    width: 2px;
+    background-color: #bfbfbf; /* Linha cinza */
+    z-index: 1;
+    left: -27px;
+    top: -70px;
+}
+ 
+.progress-bar li.active::after{
+    background-color: #fff;
+ 
+}
+ 
+.progress-bar li:first-child:after{
+  display:none;  
+}
+ 
+.progress-bar li.active::before{
+    color:#fff;
+    border:1px solid #fff;
+}
+.progress-bar li.active{
+    color:#fff;
+}
+.d-none{
+   display:none;  
+}
+ 
+.titulobaixo{
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    font-weight: 600;
+}
+ 
+ 
+ 
+/*lado direito*/
+ 
+ 
+.main{
+    display:none;
+}
+.active{
+    display:block;
+}
+.main{
+    padding:40px;
+}
+ 
+.textosprincipais h2 {
+    margin-bottom: 5px;
+    margin-top: 0;
+    font-size: 30px;
+}
+ 
+.textosprincipais h2, .textosprincipais p{
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+}
+ 
+/*input que sobe*/
+.inputs{
+    width: 100%;
+    align-content: center;
+    display: grid;
+    padding-left: 30px;
+}
+ 
+.input-group {
+    position: relative;
+    margin-top: 20px;
+   
+}
+ 
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding: 0 5px;
+    pointer-events: none;
+    transition: .5s;
+   
+   
+}
+ 
+.input-group input {
+    width: 440px;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 15px;
+    background: transparent;
+    border: 1.2px solid rgb(255, 255, 255);
+    outline: none;
+    border-radius: 5px;
+    justify-content: center;
+   
+}
+ 
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: 0;
+    font-size: 14px;
+    background: var(--Roxo);
+}
+ 
+.tituloprincipal{
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+ 
+.subtitulo{
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+ 
+}
+ 
+.nextstep {
+    display: flex;            
+    justify-content: center;  
+    align-items: center;      
+    margin-top:0;
+}
+ 
+.nextstep a {
+    margin-top: 10px;
+    color: #fff;
+}
+ 
+.nextstep button {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    background: linear-gradient(to left, var(--RoxoVinho), var(--RoxoClaro));
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+ 
+.nextstep button:hover {
+    transform: scale(1.05);
+    box-shadow: none;
+}
+ 
+/*Lado esquerdo (final) */
+.container .card .right-side{
+    width:65%;
+    background-color:var(--Roxo);
+    height:100%;
+    border-radius:20px;
+}
+ 
+/*segunda parte (PET)*/
+ 
+.filas{
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+ 
+}
+.filas{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.linha1, .linha2{
+    width: 50%;
+   
+}
+ 
+.filas > .fila2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 10px;
+    align-items: flex-start;
+}
+ 
+.fila3{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    gap: 20px;
+    margin-top: 10px;
+}
+ 
+.all{
+    margin-top: 40px;
+}
+/*Options form para os gêneros do animal*/
+ 
+.ios-segmented-control {
+    --background: rgba(239,239,240,1);
+    background: var(--background);
+    border-radius: 9px;
+    margin: 0;
+    padding: 1px;
+    border: none;
+    outline: none;
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    height: 50px;
+  }
+  .ios-segmented-control .option {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .ios-segmented-control .option:hover input:not(:checked) + label span, .ios-segmented-control .option:active input:not(:checked) + label span, .ios-segmented-control .option:focus input:not(:checked) + label span {
+    opacity: .2;
+  }
+ 
+ 
+  .ios-segmented-control .option label {
+    position: relative;
+    align-items: center;            
+    justify-content: center;
+    display: inline-grid;
+    text-align: center;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    color: rgba(0,0,0,1);
+    font-size: 14px;
+    padding: 5px;
+  }
+ 
+  .ios-segmented-control .option label::before, .ios-segmented-control .option label::after {
+    content: '';
+    width: 1px;
+    background: rgba(142,142,147,.15);
+    position: absolute;
+    border-radius: 10px;
+    will-change: background;
+    -webkit-transition: background .2s ease;
+    transition: background .2s ease;
+  }
+  .ios-segmented-control .option label::before {
+    left: 0;
+    transform: translateX(-.5px);
+  }
+  .ios-segmented-control .option label::after {
+    right: 0;
+    transform: translateX(.5px);
+  }
+  .ios-segmented-control .option:first-of-type {
+    grid-column: 1;
+    grid-row: 1;
+    box-shadow: none;
+  }
+  .ios-segmented-control .option:first-of-type label::before {
+    opacity: 0;
+  }
+  .ios-segmented-control .option:last-of-type label::after {
+    opacity: 0;
+  }
+ 
+  .ios-segmented-control .option input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    opacity: 0;
+  }
+  .ios-segmented-control .selection {
+    background: rgba(255,255,255,1);
+    border: .5px solid rgba(0,0,0,0.04);
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.12), 0 3px 1px 0 rgba(0,0,0,0.04);
+    border-radius: 7px;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 2;
+    will-change: transform;
+    -webkit-transition: transform .2s ease;
+    transition: transform .2s ease;
+  }
+  .ios-segmented-control .option label span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    will-change: transform;
+ 
+  }
+ 
+  .ios-segmented-control .option input:checked+label {
+    cursor: default;
+  }
+ 
+/* Cor de fundo e cor do texto para o span quando a opção Masculino for selecionada */
+.ios-segmented-control .option input[value="masculino"]:checked + label span {
+    background: rgb(141, 196, 255);
+    border-radius: 8px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+}
+ 
+/* Cor de fundo e cor do texto para o span quando a opção Feminino for selecionada */
+.ios-segmented-control .option input[value="feminino"]:checked + label span {
+    background: var(--RoxoClaro);
+    border-radius: 8px;
+    color: white;
+}
+ 
+.ios-segmented-control .option input:checked + label span {
+    font-weight: bold;  
+}
+ 
+ 
+select{
+    width:100%;
+    height:40px;
+    border:none;
+    outline:0;
+    border-radius:5px;
+    border:1px solid #cbced4;
+    gap:20px;
+    box-sizing:border-box;
+    padding:0px 10px;
+}
+ 
+.espaco {
+    color: var(--Roxo);
+}
+ 
+.opcoes{
+    width: 100%;
+    align-items: center;
+    justify-content:center ;
+}
+.genero{
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+.dois label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding: 0 5px;
+    pointer-events: none;
+    transition: .5s;
+   
+   
+}
+ 
+.optiontext {
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10px;
+}
+ 
+.dois{
+    margin-top: 0;
+}
+ 
+.dois input {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 15px;
+    border: 1.2px solid rgb(255, 255, 255);
+    outline: none;
+    border-radius: 5px;
+    justify-content: center;
+   
+}
+ 
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: 0;
+    font-size: 14px;
+    background: var(--Roxo);
+}
+ 
+.buttons{
+    display: flex;            
+    justify-content: center;  
+    align-items: center;      
+    margin-top:10px;
+    gap: 50px;
+}
+ 
+.buttons button {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+    background: linear-gradient(to left, var(--RoxoVinho), var(--RoxoClaro));
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+ 
+.buttons button:hover {
+    transform: scale(1.05);
+    box-shadow: none;
+}
+ 
+ 
+.titulobaixorespons{
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 15px;
+    display: none;
+}
+
+.msg {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+ 
+/*responsividade*/
+ 
+@media (min-width: 320px) and (max-width: 480px) {
+    .container{
+        height:scroll;
+       
+       
+    }
+    .container .card {
+        max-width: 350px;
+        height:auto !important;
+        margin:30px 0;
+    }
+    .container .card .right-side {
+     width:100%;
+           
+    }
+ 
+    .inputs{
+        padding-left: 0;
+    }
+    .input-text{
+         display:block;
+     }
+     
+    .input-text .input-div{
+        margin-top:20px;
+   
+    }
+ 
+    .titulobaixorespons{
+        display: block;
+    }
+ 
+    .dois{
+        margin-top: 20px;
+    }
+ 
+    .container .card .left-side {
+           
+     display: none;
+    }
+    .espaco{
+        display: none;
+    }
+    .genero{
+        margin-top: 10px;
+    }
+    .input-group input {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        padding: 0 15px;
+        background: transparent;
+        border: 1.2px solid rgb(255, 255, 255);
+        outline: none;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+       
+    }
+   
+    .nextstep button {
+        width: 90%;
+        margin-top: 30px;
+    }
+    .buttons{
+        margin-top: 20px;
+    }
+ 
+    .titulocima{
+        text-align: center;
+        font-size: 5px;
+        width: 80%;
+        margin-top: 25px;
+    }
+ 
+    .linha1, .linha2{
+        display: inline;
+    }
+    .filas >.fila1,.filas > .fila2, .filas >.fila3{
+        display: inline;
+    }
+}

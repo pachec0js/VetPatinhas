@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+ 
+:root {
+    --Branco: #fcfbf9;
+    --Roxo: #5f0f40;
+    --RoxoClaro: #b61479;
+    --vinho: #9A031E;
+    --Amarelo: #FB8B24;
+    --Laranja: #E36414;
+    --VerdeEscuro: #0F4C5C;
+    --preto: #000000;
+}
+ 
+* {
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    background: linear-gradient(135deg, #5f0f40, #b61479);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 700px;
+    max-width: 100%;
+  
+}
+.form-content {
+    flex: 1;
+    font-family: bold;
+}
+.form-content h1{
+    color: white;
+    text-align: center;
+}
+.form-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-label {
+    color: #fff;
+}
+
+.form-control:focus {
+    border-color: #7e1d59;
+    box-shadow: none;
+}
+.btn-primary {
+    background-color: #7e1d59;
+    border: none;
+}
+.btn-secondary {
+    background-color: #7e1d59;
+    border: none;
+}
+.alert {
+    background-color: #7e1d59;
+    color: white;
+    border: none;
+}

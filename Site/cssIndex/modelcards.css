@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+ 
+:root {
+    --Branco: #fcfbf9;
+    --Roxo: #5f0f40;
+    --RoxoClaro: #b61479;
+    --vinho: #9A031E;
+    --Amarelo: #FB8B24;
+    --Laranja: #E36414;
+    --VerdeEscuro: #0F4C5C;
+    --preto: #000000;
+}
+ 
+* {
+    font-family: "Poppins", sans-serif;
+}
+ 
+
+#linha-vertical {
+    height: auto;
+    border-right: 1px solid rgb(0, 0, 0);
+    width: 5%;
+}
+#linha-horizontal {
+    width:4px;
+    border-bottom: 1px solid #000000;
+  }
+.login{
+    background: linear-gradient(to right, var(--Roxo), var(--RoxoClaro));
+}
+a:link{
+    text-decoration: none;
+}
+ 
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ 
+.card {
+    margin-top: 6% !important;
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+ 
+.card:hover {
+    transform: scale(1.01);
+}
+ 
+.icon {
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--Roxo);
+}
+ 
+ 
+.icon i {
+    color: var(--Roxo);
+    font-size: 40px;
+}
+.title {
+    height: 70px;
+    color: var(--Roxo);
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+.descricao-card {
+    color: #5a5a5a;
+    height: 200px;
+}
+ 
+.subtitulo-serviços{
+    font-weight: bold;
+    color: var(--Roxo);
+    text-align: center;
+    font-size:x-large;
+    margin-top: 50px;
+    margin-bottom: 250px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    gap: 10px;                
+   
+}
+.logo{
+    margin-top: 25px;
+}
+.conteudo{
+    width: 75%;
+  padding: 20px;
+}
+.menu{
+    width: 25%;
+    padding: 20px;
+  
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.voltar {
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.voltar a {
+    font-size: xx-large;
+    color: var(--preto);
+}
+
+button.btn.btn-primary {
+    background:#7e1d59;
+    border-color: #7e1d59;
+}
+button.btn.btn-primary:hover{
+    background:#5a1640;
+}
