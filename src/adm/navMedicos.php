@@ -23,7 +23,7 @@ href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <body>
     <div class="side">
     <ul class="navside">
-        <a href="admperfil.php"><img class="logo" src="../img/LogoFooterVetPatinhas.png" width="100px" height="100px"></a>
+        <a href="admperfil.php"><img class="logo" src="../img/logoFooterVetPatinhas.png" width="100px" height="100px"></a>
         <a href="calendario.php"><i class="bi bi-calendar4-week icon"></i></a>
 
         <a href="prontuariosMedico.php"><i class="bi bi-files"></i></a>

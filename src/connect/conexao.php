@@ -2,11 +2,18 @@
 // Inicialize a sessão
 session_start();    
 
-// Configurações de conexão com o banco de dados (ajuste conforme sua configuração)
-$host = "localhost"; //nome ou IP do computador
-$dbname = "vetpatinhas"; //nome do banco de dados
-$username = "root"; //usuário do banco de dados
-$password = "Desenvolvedor@123"; // senha do usuário Desenvolvedor@123
+// Carrega as variáveis de ambiente do arquivo .env
+$envPath = __DIR__ . '/../../.env';
+$env = [];
+if (file_exists($envPath)) {
+    $env = parse_ini_file($envPath);
+}
+
+// Configurações de conexão com o banco de dados
+$host = $env['DB_HOST'] ?? "localhost";
+$dbname = $env['DB_NAME'] ?? "vetpatinhas";
+$username = $env['DB_USER'] ?? "root";
+$password = $env['DB_PASS'] ?? "";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);

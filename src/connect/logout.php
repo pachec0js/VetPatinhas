@@ -4,6 +4,6 @@ if (!isset($_SESSION)) {
     session_start();
 } 
     session_destroy();
-    header("location: ../index/login.php");
+    header("location: ../Index/login.php");
 
 ?>
